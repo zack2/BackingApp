@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">BackingApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_video">There is no video or images for this step</string>
+    <string name="content_description">image</string>
+    <string name="servings_holder">Servings: %1$d</string>
+    <string name="ingredients_holder">Ingredients: %1$d</string>
+    <string name="steps_holder">Steps: %1$d</string>
+
+    <string name="internet_error">Internet Connection Error</string>
+    <string name="server_error">Server Error</string>
+    <string name="ingredient_holder">%1$d %2$s of %3$s</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="previous">Previous Step</string>
+    <string name="next">Next Step</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="recipe">Recipe</string>
+    <string name="action_setRecipe">Set in home</string>
+    <string name="text">text</string>
+    <string name="image">image</string>
+    <string name="volley_message">There was an error retrieving data from server,please check your internet connection and try again</string>
+    <string name="volley_message2">There was an error please check your internet connection and try again</string>
+    <string name="internet_available">Good! Connected to Internet</string>
+    <string name="string_no_connection">No Internet Connectivity!!</string>
+    <string name="storage_permission_denied">Permission to access storage was denied</string>
+
+    <!-- SyncAdapter related -->
+    <string name="sync_account_type" translatable="false">com.nanodegree.udacy.backingapp</string>
+    <string name="content_authority" translatable="false">com.nanodegree.udacy.backingapp</string>
+    <string name="recipe_details_ingredients">Ingredients</string>
+    <string name="widget_configure_header">Chose your favorite Recipe</string>
+    <string name="title_collection_widget">BackingApp</string>
+    <string name="widget_empty_text">No recipe available</string>
+    <!-- Used in the ExpandableTextLayout from customviews package-->
+    <string name="review_card_expand">expand</string>
+    <string name="review_card_collapse">collapse</string>
+    <string name="alert_exit_doubleclick">Press again to exit</string>
+
+    <string name="media_url_dash"><![CDATA[http://www.youtube.com/api/manifest/dash/id/bf5bb2419360daf1/source/youtube?as=fmp4_audio_clear,fmp4_sd_hd_clear&sparams=ip,ipbits,expire,source,id,as&ip=0.0.0.0&ipbits=0&expire=19000000000&signature=51AF5F39AB0CEC3E5497CD9C900EBFEAECCCB5C7.8506521BFC350652163895D4C26DEE124209AA9E&key=ik0]]></string>
+
+    <!--<string name="media_url_dash"><![CDATA[https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58ffd974_-intro-creampie/-intro-creampie.mp4]]></string>-->
+    <string name="_12">12</string>
+    <string name="step">Steps</string>
+    <string name="title_recipe">- Ingredients</string>
+</resources>

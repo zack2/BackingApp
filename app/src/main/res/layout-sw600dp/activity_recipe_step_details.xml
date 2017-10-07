@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackgroundParentCard"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundParentCard"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/stepImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/step_video_height"
+            android:visibility="gone"
+            android:src="@drawable/yellow_cake"
+            android:contentDescription="@string/image"
+            android:scaleType="centerCrop"/>
+
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/exoPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/step_video_height"
+            android:adjustViewBounds="true"
+            app:resize_mode="fill"
+            app:fastforward_increment="30000"
+            app:rewind_increment="30000"
+            app:show_timeout="10000" />
+
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:elevation="@dimen/activity_recipe_step_detail_elevation"
+            android:layout_marginTop="5dp"
+            tools:ignore="UselessParent"
+            tools:targetApi="lollipop">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="true"
+                app:contentPadding="5dp"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="6dp"
+                app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutCardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/linear_clic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/shortDescriptionDetails"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:maxLines="2"
+                            android:text="Informatique"
+                            android:textColor="@color/colorSecondaryText"
+                            android:textSize="@dimen/expandable_layout_text_size"
+                            tools:ignore="HardcodedText,RtlHardcoded" />
+
+                        <ImageView
+                            android:id="@+id/imageViewExpand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/fab_margin"
+                            android:layout_marginRight="@dimen/fab_margin"
+                            android:contentDescription="@string/image"
+                            app:srcCompat="@drawable/ic_expand_down_pre_lollipop"
+                            tools:ignore="VectorDrawableCompat"
+                            tools:targetApi="lollipop" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/layout_info_pro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+
+                            <TextView
+                                android:id="@+id/textview_description"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="5dp"
+                                android:paddingRight="25dp"
+                                android:paddingLeft="25dp"
+                                android:paddingTop="5dp"
+                                android:textSize="@dimen/ingredient_item_tv_size"
+                                android:text="@string/review_card_expand"
+                                android:textColor="@color/colorAccent" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </ScrollView>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
