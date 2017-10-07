@@ -373,7 +373,7 @@ public class StepDetailsFragment extends Fragment implements EventListener,
             mPlayerView.setPlayer(mExoPlayer);
             mExoPlayer.setPlayWhenReady(playWhenReady);
             mExoPlayer.seekTo(currentWindow, playbackPosition);
-            inErrorState = false;
+
         }
 
         Log.e(TAG + "initializePlayer2", String.valueOf(mExoPlayer));
