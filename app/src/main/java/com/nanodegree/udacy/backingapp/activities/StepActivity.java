@@ -1,6 +1,4 @@
-/*
- * Copyright (C) 2017 Steve NDENDE, www.github.com/steve111MV/DeliciousRecipes
- */
+
 
 package com.nanodegree.udacy.backingapp.activities;
 

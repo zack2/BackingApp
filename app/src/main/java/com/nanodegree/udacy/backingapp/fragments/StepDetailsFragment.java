@@ -360,6 +360,7 @@ public class StepDetailsFragment extends Fragment implements EventListener,
     private void initializePlayer(Uri mediaUri) {
 
         if (mExoPlayer == null) {
+
             Log.e(TAG + "initializePlayer1", String.valueOf(mExoPlayer));
             // a factory to create an AdaptiveVideoTrackSelection
             TrackSelection.Factory adaptiveTrackSelectionFactory =
